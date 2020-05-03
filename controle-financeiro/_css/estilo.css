@@ -47,15 +47,6 @@ h1{
     border-bottom: 1px solid rgba(0,0,0,0.3);
 }
 
-p{
-    position: absolute;
-    display: inline-block;
-    margin-top: 100px;
-    margin-left: 50px;
-    margin-right: 20px;
-    
-
-}
 
 nav#menu{
     margin-left: -650px;
@@ -80,8 +71,6 @@ nav#menu li{
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
-    
-
 }
 
 nav#menu a{
@@ -91,11 +80,11 @@ nav#menu a{
 
 nav#menu li:hover{
     text-decoration: underline;
-    background-color: rgb(102, 179, 77);
+    background-color: rgb(102, 179, 77);   
 }
 
 div.saldoMes{
-    position: relative;
+    position: absolute;
     width: 200px;
     height: 60px;
     background-color: #ffffff;
@@ -107,7 +96,7 @@ div.saldoMes{
     box-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
-div.saldoMes h1{
+div.saldoMes h2{
     font-family: Arial, sans-serif;
     font-size: 10pt;
     padding-top: 7px;
@@ -120,23 +109,23 @@ div.saldoMes p{
     color: rgb(102, 179, 77);
     padding-left: 8px;
     margin-top: 0px;
+    margin-left: 0;
 }
 
 div.saldoTotal{
-    float: right;
-    position: relative;
+    position: absolute;
     width: 200px;
     height: 60px;
     background-color: #ffffff;
-    margin-top: -60px;
-    margin-right: 820px;
+    margin-top: 150px;
+    margin-left: 325px;
     border-left: 5px solid rgb(12, 58, 105);
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     box-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
-div.saldoTotal h1{
+div.saldoTotal h2{
     font-family: Arial, sans-serif;
     font-size: 10pt;
     padding-top: 0px;
@@ -149,23 +138,23 @@ div.saldoTotal p{
     color: rgb(102, 179, 77);
     padding-left: 8px;
     margin-top: 0px;
+    margin-left: 0px;
 }
 
 div.contasPagar{
-    float: right;
-    position: relative;
+    position: absolute;
     width: 200px;
     height: 60px;
     background-color: #ffffff;
-    margin-top: -60px;
-    margin-right: 550px;
+    margin-top: 150px;
+    margin-left: 600px;
     border-left: 5px solid rgb(255, 0, 0);
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     box-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
-div.contasPagar h1{
+div.contasPagar h2{
     font-family: Arial, sans-serif;
     font-size: 10pt;
     padding-top: 0px;
@@ -178,23 +167,23 @@ div.contasPagar p{
     color: rgb(255, 0, 0);
     padding-left: 8px;
     margin-top: 0px;
+    margin-left: 0px;
 }
 
 div.diversao{
-    float: right;
-    position: relative;
+    position: absolute;
     width: 200px;
     height: 60px;
     background-color: #ffffff;
-    margin-top: -60px;
-    margin-right: 280px;
+    margin-top: 150px;
+    margin-left: 875px;
     border-left: 5px solid rgb(255, 32, 32);
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
     box-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
-div.diversao h1{
+div.diversao h2{
     font-family: Arial, sans-serif;
     font-size: 10pt;
     padding-top: 0px;
@@ -207,14 +196,15 @@ div.diversao p{
     color: rgb(255, 32, 32);
     padding-left: 8px;
     margin-top: 0px;
+    margin-left: 0px;
 }
 
 table#entradas{
+    position: absolute;
     border-spacing: 0px;
-    margin-top: 200px;
+    margin-top: 300px;
     margin-left: 150px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
-    
+    box-shadow: 2px 2px 2px rgba(0,0,0,.5);    
 }
 
 table#entradas td{
@@ -234,12 +224,12 @@ table#entradas td.direita{
 }
 
 table#saidas{
+    position: relative;
     float: right;
     border-spacing: 0px;
-    margin-top: -98px;
+    margin-top: 300px;
     margin-right: 200px;
     box-shadow: 2px 2px 2px rgba(0,0,0,.5);
-    
 }
 
 table#saidas td{
@@ -258,135 +248,143 @@ table#saidas td.direita{
     color: red;
 }
 
-input{
-    margin-top: 400px;
-}
-
-div.saldoMes{
-    position: relative;
-    width: 200px;
-    height: 60px;
-    background-color: #ffffff;
-    margin-top: 150px;
-    margin-left: 50px;
-    border-left: 5px solid rgb(12, 58, 105);
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
-}
-
-div.saldoMes h1{
-    font-family: Arial, sans-serif;
-    font-size: 10pt;
-    padding-top: 7px;
-    padding-left: 8px;
-}
-
-div.saldoMes p{
-    font-family: Arial, sans-serif;
-    font-size: 12pt;
-    color: rgb(102, 179, 77);
-    padding-left: 8px;
-    margin-top: 0px;
-}
-
-div.saldoTotal{
-    float: right;
-    position: relative;
-    width: 200px;
-    height: 60px;
-    background-color: #ffffff;
-    margin-top: -60px;
-    margin-right: 820px;
-    border-left: 5px solid rgb(12, 58, 105);
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
-}
-
-div.saldoTotal h1{
-    font-family: Arial, sans-serif;
-    font-size: 10pt;
-    padding-top: 0px;
-    padding-left: 8px;
-}
-
-div.saldoTotal p{
-    font-family: Arial, sans-serif;
-    font-size: 12pt;
-    color: rgb(102, 179, 77);
-    padding-left: 8px;
-    margin-top: 0px;
-}
-
-div.contasPagar{
-    float: right;
-    position: relative;
-    width: 200px;
-    height: 60px;
-    background-color: #ffffff;
-    margin-top: -60px;
-    margin-right: 550px;
-    border-left: 5px solid rgb(255, 0, 0);
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
-}
-
-div.contasPagar h1{
-    font-family: Arial, sans-serif;
-    font-size: 10pt;
-    padding-top: 0px;
-    padding-left: 8px;
-}
-
-div.contasPagar p{
-    font-family: Arial, sans-serif;
-    font-size: 12pt;
-    color: rgb(255, 0, 0);
-    padding-left: 8px;
-    margin-top: 0px;
-}
-
-div.diversao{
-    float: right;
-    position: relative;
-    width: 200px;
-    height: 60px;
-    background-color: #ffffff;
-    margin-top: -60px;
-    margin-right: 280px;
-    border-left: 5px solid rgb(255, 32, 32);
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px;
-    box-shadow: 2px 2px 2px rgba(0,0,0,.5);
-}
-
-div.diversao h1{
-    font-family: Arial, sans-serif;
-    font-size: 10pt;
-    padding-top: 0px;
-    padding-left: 8px;
-}
-
-div.diversao p{
-    font-family: Arial, sans-serif;
-    font-size: 12pt;
-    color: rgb(255, 32, 32);
-    padding-left: 8px;
-    margin-top: 0px;
-}
-
+/*Formatação tela de Recebimentos*/
 div#hisRecebimento{
     position: absolute;
     width: 1000px;
+    height: 500px;
     background-color: #ffffff;
-    margin-top: 150px;
-    margin-left: 150px;
+    margin-top: 100px;
+    margin-left: 110px;
     border-top: 40px solid rgb(12, 58, 105);
 }
 
-div#hisRecebimento input{
-    position: relative;
+ul#relatorio {
+    position: absolute;
+    margin-top: 50px;
+    margin-left: 71px;
+
+}
+
+ul#relatorio li{
+    display: inline-block;
+    margin-right: 20px;
+    background-color: rgb(102, 179, 77);
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    color: #ffffff;
+}
+
+ul#relatorio li#download{
+    background-color: #FEA50D;
+}
+
+/*formatação tela de Pagamentos*/
+
+div#hisPagamento{
+    position: absolute;
+    width: 1000px;
+    height: 300px;
+    background-color: #ffffff;
+    margin-top: 100px;
+    margin-left: 110px;
+    border-top: 40px solid rgb(12, 58, 105);
+}
+
+/*Formatação tela de transações*/
+
+div#quadroRecebimento{
+    position: absolute;
+    margin: 70px 0px 10px 40px;
+    padding: 20px;
+    width: 470px;
+    height: 370px;
+    background-color: #ffffff;
+    border-top: 40px solid rgb(12, 58, 105);
+
+}
+
+div#quadroRecebimento span{
+    font-family: arial, sans-serif;
+    font-size: 12pt;
+    color: rgb(0,0,0);
+}
+
+div#quadroRecebimento input{
+    height: 30px;
+    padding-left: 5px;
+    border: 1px solid rgb(0,0,0);
+}
+
+div#quadroRecebimento span#nome{
+    position: absolute;
+    margin-top: 10px;
     
+}
+
+div#quadroRecebimento input.nome_recebimento{
+    position: absolute;
+    margin-top: 18px;
+}
+
+div#quadroRecebimento span#preco{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 250px;
+}
+
+div#quadroRecebimento input.preco_recebimento{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 250px;
+}
+
+div#quadroRecebimento span#data{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 250px;
+}
+
+div#quadroRecebimento input.data_recebimento{
+    position: absolute;
+    margin-top: 88px;
+    margin-left: 250px;
+}
+
+div#quadroRecebimento span#categoria{
+    position: absolute;
+    margin-top: 60px;
+}
+
+div#quadroRecebimento select.categoria_recebimento{
+    position: absolute;
+    margin-top: 68px;
+    width: 150px;
+    height: 30px;
+    background-color: rgba(0,0,0,.4);
+    color: rgb(0,0,0);
+    border: 1px solid rgb(0,0,0);
+}
+
+div#quadroRecebimento span#observacoes{
+    position: absolute;
+    margin-top: 140px;
+}
+
+div#quadroRecebimento textarea.observacoes_recebimento{
+    position: absolute;
+    margin-top: 148px;
+    padding: 10px;
+}
+
+div#quadroRecebimento button{
+    position: absolute;
+    margin-top: 258px;
+    margin-left: 270px;
+    height: 30px;
+    width: 80px;
+    background-color: rgb(12, 58, 105);
+    border: 1px solid rgb(12, 58, 105);
+    color: #ffffff;
 }

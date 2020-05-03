@@ -28,5 +28,25 @@
 
     <h1>Transações</h1> 
 
+    <div id="quadroRecebimento">
+        <form action="" method="POST">
+            <span id="nome">Nome *</span><br/>
+                <input required="required" class="nome_recebimento" type="text" placeholder="Nome do pagador"/>
+            <span id="preco">Preço *</span><br/>
+                <input required="required" class="preco_recebimento" type="number" placeholder="Valor recebido"/>
+            <span id="data">Data *</span><br/>
+                <input required="required" class="data_recebimento" type="date" placeholder="dd/mm/aaaa"/>
+            <span id="categoria">Selecione uma categoria *</span><br/>
+                <select required="required" class="categoria_recebimento">
+                    <option selected="selected" value="">Categoria</option>
+                    <option value="1">Salário</option>
+                    <option value="2">Renda extra</option>
+                </select>
+            <span id="observacoes">Observações</span><br/>
+                <textarea class="observacoes_recebimento" placeholder="Observações" rows="8" cols="30"></textarea>
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+
 </div>
 </body>
