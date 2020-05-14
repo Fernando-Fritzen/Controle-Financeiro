@@ -29,6 +29,7 @@
     <h1>Transações</h1> 
 
     <div id="quadroRecebimento">
+        <span id="quadroRecebimento">+ Recebimento</span>
         <form action="" method="POST">
             <span id="nome">Nome *</span><br/>
                 <input required="required" class="nome_recebimento" type="text" placeholder="Nome do pagador"/>
@@ -44,6 +45,30 @@
                 </select>
             <span id="observacoes">Observações</span><br/>
                 <textarea class="observacoes_recebimento" placeholder="Observações" rows="8" cols="30"></textarea>
+            <button type="submit">Adicionar</button>
+        </form>
+    </div>
+
+    <div id="quadroPagamento">
+        <span id="quadroPagamento">- Pagamento</span>
+        <form action="" method="POST">
+            <span id="nome">Nome *</span><br/>
+                <input required="required" class="nome_pagamento type="text" placeholder="Nome do pagador"/>
+            <span id="preco">Preço *</span><br/>
+                <input required="required" class="preco_pagamento" type="number" placeholder="Valor pago"/>
+            <span id="data">Data *</span><br/>
+                <input required="required" class="data_pagamento" type="date" placeholder="dd/mm/aaaa"/>
+            <span id="categoria">Selecione uma categoria *</span><br/>
+                <select required="required" class="categoria_pagamento">
+                    <option selected="selected" value="">Categoria</option>
+                    <option value="1">Aluguel</option>
+                    <option value="2">Agua</option>
+                    <option value="2">luz</option>
+                    <option value="2">Comida</option>
+                    <option value="2">Diversão</option>
+                </select>
+            <span id="observacoes">Observações</span><br/>
+                <textarea class="observacoes_pagamento" placeholder="Observações" rows="8" cols="30"></textarea>
             <button type="submit">Adicionar</button>
         </form>
     </div>

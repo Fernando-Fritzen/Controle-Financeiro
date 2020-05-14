@@ -7,6 +7,17 @@ header#topo{
     top: 0px;
     left: 0px;
     background-color: rgb(102, 179, 77);
+    
+}
+
+div#abc{
+    position: absolute;
+    margin-top: 0px;
+    margin-right: 0px;
+    width: 30px;
+    height: 35px;
+    background-color: blue;
+
 }
 
 header#topo p{
@@ -35,8 +46,10 @@ div#interface{
 
 body{
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     background: rgba(0,0,0,.13);
+    margin: 0px;
+    
 }
 
 h1{
@@ -99,7 +112,7 @@ div.saldoMes{
 div.saldoMes h2{
     font-family: Arial, sans-serif;
     font-size: 10pt;
-    padding-top: 7px;
+    padding-top: 0px;
     padding-left: 8px;
 }
 
@@ -250,13 +263,27 @@ table#saidas td.direita{
 
 /*Formatação tela de Recebimentos*/
 div#hisRecebimento{
-    position: absolute;
+    box-sizing: border-box;
+    position: relative;
     width: 1000px;
-    height: 500px;
+    height: 300px;
     background-color: #ffffff;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: 110px;
-    border-top: 40px solid rgb(12, 58, 105);
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+span#hisRecebimento{
+    box-sizing: border-box;
+    position: absolute;
+    display: inline-block;
+    width: 1000px;
+    margin-top: -48px;
+    margin-left: -10px;
+    padding: 10px 0px 10px 20px;
+    background-color: rgb(12, 58, 105);
+    color: #ffffff;
 }
 
 ul#relatorio {
@@ -276,33 +303,96 @@ ul#relatorio li{
     color: #ffffff;
 }
 
+ul#relatorio a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
 ul#relatorio li#download{
     background-color: #FEA50D;
+}
+
+div#hisRecebimento table{
+    position: absolute;
+    margin-top: 180px;
+    
+}
+
+div#hisRecebimento table td{
+    width: 120px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 200px;
+    text-align: center;
+    border: 1px solid rgb(0,0,0);   
 }
 
 /*formatação tela de Pagamentos*/
 
 div#hisPagamento{
-    position: absolute;
+    box-sizing: border-box;
+    position: relative;
     width: 1000px;
     height: 300px;
     background-color: #ffffff;
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: 110px;
-    border-top: 40px solid rgb(12, 58, 105);
+    padding-left: 10px;
+    
+}
+
+span#hisPagamento{
+    box-sizing: border-box;
+    position: absolute;
+    display: inline-block;
+    width: 1000px;
+    margin-top: -38px;
+    margin-left: -10px;
+    padding: 10px 0px 10px 20px;
+    background-color: rgb(12, 58, 105);
+    color: #ffffff;
+}
+
+div#hisPagamento table{
+    position: absolute;
+    margin-top: 180px;
+    
+}
+
+div#hisPagamento table td{
+    width: 120px;
+    height: 30px;
+    padding: 5px;
+    margin-top: 200px;
+    text-align: center;
+    border: 1px solid rgb(0,0,0);   
 }
 
 /*Formatação tela de transações*/
 
 div#quadroRecebimento{
-    position: absolute;
-    margin: 70px 0px 10px 40px;
+    position: relative;
+    margin: 110px 0px 10px 80px;
     padding: 20px;
-    width: 470px;
-    height: 370px;
+    width: 500px;
+    height: 430px;
     background-color: #ffffff;
-    border-top: 40px solid rgb(12, 58, 105);
+    box-sizing: border-box;
+    
 
+}
+
+div#quadroRecebimento span#quadroRecebimento{
+
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 500px;
+    padding: 10px 0px 10px 20px;
+    background-color: rgb(12, 58, 105);
+    margin-top: -58px;
+    margin-left: -20px;
+    color: #ffffff;
 }
 
 div#quadroRecebimento span{
@@ -386,5 +476,119 @@ div#quadroRecebimento button{
     width: 80px;
     background-color: rgb(12, 58, 105);
     border: 1px solid rgb(12, 58, 105);
+    color: #ffffff;
+}
+
+
+
+
+
+div#quadroPagamento{
+    position: absolute;
+    float: right;
+    box-sizing: border-box;
+    margin: -440px 0px 10px 650px;
+    
+    padding: 20px;
+    width: 500px;
+    height: 430px;
+    background-color: #ffffff;
+
+}
+
+div#quadroPagamento span#quadroPagamento{
+
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 500px;
+    padding: 10px 0px 10px 20px;
+    background-color: rgb(232, 15, 15);
+    margin-top: -58px;
+    margin-left: -20px;
+    color: #ffffff;
+}
+
+div#quadroPagamento span{
+    font-family: arial, sans-serif;
+    font-size: 12pt;
+    color: rgb(0,0,0);
+}
+
+div#quadroPagamento input{
+    height: 30px;
+    padding-left: 5px;
+    border: 1px solid rgb(0,0,0);
+}
+
+div#quadroPagamento span#nome{
+    position: absolute;
+    margin-top: 10px;
+    
+}
+
+div#quadroPagamento input.nome_pagamento{
+    position: absolute;
+    margin-top: 18px;
+}
+
+div#quadroPagamento span#preco{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 250px;
+}
+
+div#quadroPagamento input.preco_pagamento{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 250px;
+}
+
+div#quadroPagamento span#data{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 250px;
+}
+
+div#quadroPagamento input.data_pagamento{
+    position: absolute;
+    margin-top: 88px;
+    margin-left: 250px;
+}
+
+div#quadroPagamento span#categoria{
+    position: absolute;
+    margin-top: 60px;
+}
+
+div#quadroPagamento select.categoria_pagamento{
+    position: absolute;
+    margin-top: 68px;
+    width: 150px;
+    height: 30px;
+    background-color: rgba(0,0,0,.4);
+    color: rgb(0,0,0);
+    border: 1px solid rgb(0,0,0);
+}
+
+div#quadroPagamento span#observacoes{
+    position: absolute;
+    margin-top: 140px;
+}
+
+div#quadroPagamento textarea.observacoes_pagamento{
+    position: absolute;
+    margin-top: 148px;
+    padding: 10px;
+}
+
+div#quadroPagamento button{
+    position: absolute;
+    margin-top: 258px;
+    margin-left: 270px;
+    height: 30px;
+    width: 80px;
+    background-color: rgb(232, 15, 15);
+    border: 1px solid rgb(232, 15, 15);
     color: #ffffff;
 }
