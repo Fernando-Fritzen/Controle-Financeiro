@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+header#topo{
+    box-sizing: border-box;
+    position: relative;
+    width: 100vw;
+    height: 60px;
+    top: 0px;
+    left: 0px;
+    background-color: rgb(102, 179, 77);
+    padding-left: 0px;
+    
+}
+
+img#logo{
+    position: absolute;
+    width: 250px;
+    height: 80px;
+    margin-top: -5px;
+    margin-left: 0px;
+}
+
+div.icon{
+    height: 60px;
+    box-sizing: border-box;
+    position: absolute;
+    margin-left: 1000px;
+    padding: 10px;
+    align-items: center;
+}
+
+div.icon span{
+    position: relative;
+    margin-right: 10px;
+}
+
+img#icon{
+    float: right;
+    position: relative;
+    height: 30px;
+}
+
+header#topo p{
+    font-family: Cambria;
+    font-size: 15pt;
+    color: white;
+    margin-top: 10px;
+    margin-left: 15px;
+    text-transform: uppercase;
+}
+
+
+header#cabecalho{
+    position: relative;
+    width: 100vw;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    
+    background: rgb(12, 58, 105);
+}
+
+div#interface{
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,.13);
+    margin: 0px;
+    box-sizing: border-box;
+    
+}
+
+h2{
+    background-color: blue;
+}
+p{
+    background-color: blue;
+}
