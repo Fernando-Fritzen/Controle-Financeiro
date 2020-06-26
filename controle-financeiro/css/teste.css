@@ -71,6 +71,7 @@ body{
     background: rgba(0,0,0,.13);
     margin: 0px;
     box-sizing: border-box;
+    justify-content: center;
     
 }
 
@@ -79,4 +80,249 @@ h2{
 }
 p{
     background-color: blue;
+}
+
+div.ooo{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+div#cont{
+
+    width: 85vw;
+    height: 100vh;
+    padding: 10px;
+    box-sizing: border-box;
+    justify-content: center;
+}
+
+
+
+div#quadroRecebimento{
+    position: relative;
+    float: left;
+    margin-top: 200px;
+    margin-bottom: -100px;
+    padding: 20px;
+    width: 500px;
+    height: 430px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    
+
+}
+
+div#quadroRecebimento span#quadroRecebimento{
+
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 500px;
+    padding: 10px 0px 10px 20px;
+    background-color: rgb(12, 58, 105);
+    margin-top: -58px;
+    margin-left: -20px;
+    color: #ffffff;
+}
+
+div#quadroRecebimento span{
+    font-family: arial, sans-serif;
+    font-size: 12pt;
+    color: rgb(0,0,0);
+}
+
+div#quadroRecebimento input{
+    height: 30px;
+    padding-left: 5px;
+    border: 1px solid rgb(0,0,0);
+}
+
+div#quadroRecebimento span#nome{
+    position: absolute;
+    margin-top: 10px;
+    
+}
+
+div#quadroRecebimento input.nome_recebimento{
+    position: absolute;
+    margin-top: 18px;
+}
+
+div#quadroRecebimento span#preco{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 250px;
+}
+
+div#quadroRecebimento input.preco_recebimento{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 250px;
+}
+
+div#quadroRecebimento span#data{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 250px;
+}
+
+div#quadroRecebimento input.data_recebimento{
+    position: absolute;
+    margin-top: 88px;
+    margin-left: 250px;
+}
+
+div#quadroRecebimento span#categoria{
+    position: absolute;
+    margin-top: 60px;
+}
+
+div#quadroRecebimento select.categoria_recebimento{
+    position: absolute;
+    margin-top: 68px;
+    width: 150px;
+    height: 30px;
+    background-color: rgba(0,0,0,.4);
+    color: rgb(0,0,0);
+    border: 1px solid rgb(0,0,0);
+}
+
+div#quadroRecebimento span#observacoes{
+    position: absolute;
+    margin-top: 140px;
+}
+
+div#quadroRecebimento textarea.observacoes_recebimento{
+    position: absolute;
+    margin-top: 148px;
+    padding: 10px;
+}
+
+div#quadroRecebimento button{
+    position: absolute;
+    margin-top: 258px;
+    margin-left: 270px;
+    height: 30px;
+    width: 80px;
+    background-color: rgb(12, 58, 105);
+    border: 1px solid rgb(12, 58, 105);
+    color: #ffffff;
+}
+
+
+
+
+
+div#quadroPagamento{
+    position: relative;
+    float: right;
+    box-sizing: border-box;
+    margin: 200px 0px 10px 0px;
+    
+    padding: 20px;
+    width: 500px;
+    height: 430px;
+    background-color: #ffffff;
+
+}
+
+div#quadroPagamento span#quadroPagamento{
+
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 500px;
+    padding: 10px 0px 10px 20px;
+    background-color: rgb(232, 15, 15);
+    margin-top: -58px;
+    margin-left: -20px;
+    color: #ffffff;
+}
+
+div#quadroPagamento span{
+    font-family: arial, sans-serif;
+    font-size: 12pt;
+    color: rgb(0,0,0);
+}
+
+div#quadroPagamento input{
+    height: 30px;
+    padding-left: 5px;
+    border: 1px solid rgb(0,0,0);
+}
+
+div#quadroPagamento span#nome{
+    position: absolute;
+    margin-top: 10px;
+    
+}
+
+div#quadroPagamento input.nome_pagamento{
+    position: absolute;
+    margin-top: 18px;
+}
+
+div#quadroPagamento span#preco{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 250px;
+}
+
+div#quadroPagamento input.preco_pagamento{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 250px;
+}
+
+div#quadroPagamento span#data{
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 250px;
+}
+
+div#quadroPagamento input.data_pagamento{
+    position: absolute;
+    margin-top: 88px;
+    margin-left: 250px;
+}
+
+div#quadroPagamento span#categoria{
+    position: absolute;
+    margin-top: 60px;
+}
+
+div#quadroPagamento select.categoria_pagamento{
+    position: absolute;
+    margin-top: 68px;
+    width: 150px;
+    height: 30px;
+    background-color: rgba(0,0,0,.4);
+    color: rgb(0,0,0);
+    border: 1px solid rgb(0,0,0);
+}
+
+div#quadroPagamento span#observacoes{
+    position: absolute;
+    margin-top: 140px;
+}
+
+div#quadroPagamento textarea.observacoes_pagamento{
+    position: absolute;
+    margin-top: 148px;
+    padding: 10px;
+}
+
+div#quadroPagamento button{
+    position: absolute;
+    margin-top: 258px;
+    margin-left: 270px;
+    height: 30px;
+    width: 80px;
+    background-color: rgb(232, 15, 15);
+    border: 1px solid rgb(232, 15, 15);
+    color: #ffffff;
 }

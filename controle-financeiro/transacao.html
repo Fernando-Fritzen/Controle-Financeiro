@@ -11,6 +11,10 @@
 <div id="interface">
     <header id="topo">
         <img src="img/logo1.png" alt="logo" id="logo">
+        <div class="icon">
+            <span>Olá, Fernando</span>
+            <a href="login.html"><img src="img/avatar.png" alt="icon user" id="icon"></a>
+        </div>
     </header>
 
     <header id="cabecalho">
@@ -20,58 +24,62 @@
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="recebimentos.html">RECEBIMENTOS</a></li>
                 <li><a href="pagamentos.html">PAGAMENTOS</a></li>
-                <li><a href="transacao.html">Transações</a></li>
+                <li><a href="transacao.html">movimentação</a></li>
                 <li><a href="contas.html">CONTAS</a></li>
             </ul>
         </nav>
     </header>
 
-    <h1>Transações</h1> 
+    <h1>Movimentação</h1> 
 
-    <div id="quadroRecebimento">
-        <span id="quadroRecebimento">+ Recebimento</span>
-        <form action="" method="POST">
-            <span id="nome">Nome *</span><br/>
-                <input required="required" class="nome_recebimento" type="text" placeholder="Nome do pagador"/>
-            <span id="preco">Preço *</span><br/>
-                <input required="required" class="preco_recebimento" type="number" placeholder="Valor recebido"/>
-            <span id="data">Data *</span><br/>
-                <input required="required" class="data_recebimento" type="date" placeholder="dd/mm/aaaa"/>
-            <span id="categoria">Selecione uma categoria *</span><br/>
-                <select required="required" class="categoria_recebimento">
-                    <option selected="selected" value="">Categoria</option>
-                    <option value="1">Salário</option>
-                    <option value="2">Renda extra</option>
-                </select>
-            <span id="observacoes">Observações</span><br/>
-                <textarea class="observacoes_recebimento" placeholder="Observações" rows="8" cols="30"></textarea>
-            <button type="submit">Adicionar</button>
-        </form>
+    <div class="centro">
+        <div id="quadroRecebimento">
+            <span id="quadroRecebimento">+ Recebimento</span>
+            <form action="" method="POST">
+                <span id="nome">Nome *</span><br/>
+                    <input required="required" class="nome_recebimento" type="text" placeholder="Nome do pagador"/>
+                <span id="preco">Preço *</span><br/>
+                    <input required="required" class="preco_recebimento" type="number" placeholder="Valor recebido"/>
+                <span id="data">Data *</span><br/>
+                    <input required="required" class="data_recebimento" type="date" placeholder="dd/mm/aaaa"/>
+                <span id="categoria">Selecione uma categoria *</span><br/>
+                    <select required="required" class="categoria_recebimento">
+                        <option selected="selected" value="">Categoria</option>
+                        <option value="1">Dinheiro</option>
+                        <option value="2">Bradesco</option>
+                        <option value="3">Banco do Brasil</option>
+                        <option value="4">Itau</option>
+                        <option value="5">Sicredi</option>
+                    </select>
+                <span id="observacoes">Descrição</span><br/>
+                    <textarea class="observacoes_recebimento" placeholder="Descrição" rows="8" cols="30"></textarea>
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
+
+        <div id="quadroPagamento">
+            <span id="quadroPagamento">- Pagamento</span>
+            <form action="" method="POST">
+                <span id="nome">Nome *</span><br/>
+                    <input required="required" class="nome_pagamento" type="text" placeholder="Nome do pagador"/>
+                <span id="preco">Preço *</span><br/>
+                    <input required="required" class="preco_pagamento" type="number" placeholder="Valor pago"/>
+                <span id="data">Data *</span><br/>
+                    <input required="required" class="data_pagamento" type="date" placeholder="dd/mm/aaaa"/>
+                <span id="categoria">Selecione uma categoria *</span><br/>
+                    <select required="required" class="categoria_pagamento">
+                        <option selected="selected" value="">Categoria</option>
+                        <option value="1">Dinheiro</option>
+                        <option value="2">Bradesco</option>
+                        <option value="3">Banco do Brasil</option>
+                        <option value="4">Itau</option>
+                        <option value="5">Sicredi</option>
+                    </select>
+                <span id="observacoes">Descrição</span><br/>
+                    <textarea class="observacoes_pagamento" placeholder="Descrição" rows="8" cols="30"></textarea>
+                <button type="submit">Adicionar</button>
+            </form>
+        </div>
     </div>
-
-    <div id="quadroPagamento">
-        <span id="quadroPagamento">- Pagamento</span>
-        <form action="" method="POST">
-            <span id="nome">Nome *</span><br/>
-                <input required="required" class="nome_pagamento" type="text" placeholder="Nome do pagador"/>
-            <span id="preco">Preço *</span><br/>
-                <input required="required" class="preco_pagamento" type="number" placeholder="Valor pago"/>
-            <span id="data">Data *</span><br/>
-                <input required="required" class="data_pagamento" type="date" placeholder="dd/mm/aaaa"/>
-            <span id="categoria">Selecione uma categoria *</span><br/>
-                <select required="required" class="categoria_pagamento">
-                    <option selected="selected" value="">Categoria</option>
-                    <option value="1">Aluguel</option>
-                    <option value="2">Agua</option>
-                    <option value="3">luz</option>
-                    <option value="4">Comida</option>
-                    <option value="5">Diversão</option>
-                </select>
-            <span id="observacoes">Observações</span><br/>
-                <textarea class="observacoes_pagamento" placeholder="Observações" rows="8" cols="30"></textarea>
-            <button type="submit">Adicionar</button>
-        </form>
-    </div>
-
 </div>
 </body>

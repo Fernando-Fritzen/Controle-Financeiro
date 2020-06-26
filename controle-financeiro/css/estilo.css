@@ -9,6 +9,7 @@ header#topo{
     left: 0px;
     background-color: rgb(102, 179, 77);
     padding-left: 0px;
+    padding-right: 30px;
     
 }
 
@@ -23,9 +24,10 @@ img#logo{
 div.icon{
     height: 60px;
     box-sizing: border-box;
-    position: absolute;
-    margin-left: 1000px;
-    padding: 10px;
+    position: relative;
+    float: right;
+    display: flex;
+    flex-direction: row;
     align-items: center;
 }
 
@@ -223,7 +225,7 @@ div.contasPagar p{
     margin-left: 0px;
 }
 
-div.diversao{
+div.despesasMes{
     position: absolute;
     width: 200px;
     height: 60px;
@@ -237,14 +239,14 @@ div.diversao{
     box-shadow: 2px 2px 2px rgba(0,0,0,.5);
 }
 
-div.diversao h2{
+div.despesasMes h2{
     font-family: Arial, sans-serif;
     font-size: 10pt;
     padding-top: 0px;
     padding-left: 8px;
 }
 
-div.diversao p{
+div.despesasMes p{
     font-family: Arial, sans-serif;
     font-size: 12pt;
     color: rgb(255, 32, 32);
@@ -275,7 +277,7 @@ table#entradas td.esquerda{
 
 table#entradas td.direita{
     text-align: right;
-    color: rgb(102, 179, 77);
+    color: rgb(12, 58, 105);
 }
 
 table#saidas{
@@ -301,7 +303,7 @@ table#saidas td.esquerda{
 
 table#saidas td.direita{
     text-align: right;
-    color: red;
+    color: rgb(12, 58, 105);
 }
 
 /*Formatação tela de Recebimentos*/
@@ -309,7 +311,7 @@ div#hisRecebimento{
     box-sizing: border-box;
     position: relative;
     width: 1000px;
-    height: 300px;
+    height: 250px;
     background-color: #ffffff;
     margin-top: 150px;
     margin-left: 110px;
@@ -357,7 +359,8 @@ ul#relatorio li#download{
 
 div#hisRecebimento table{
     position: absolute;
-    margin-top: 180px;
+    padding-top: 50px;
+    margin-top: 80px;
     
 }
 
@@ -367,7 +370,8 @@ div#hisRecebimento table td{
     padding: 5px;
     margin-top: 200px;
     text-align: center;
-    border: 1px solid rgb(0,0,0);   
+    border: 1px solid rgb(0,0,0); 
+    font-weight: bold;  
 }
 
 /*formatação tela de Pagamentos*/
@@ -376,7 +380,7 @@ div#hisPagamento{
     box-sizing: border-box;
     position: relative;
     width: 1000px;
-    height: 300px;
+    height: 250px;
     background-color: #ffffff;
     margin-top: 150px;
     margin-left: 110px;
@@ -398,8 +402,8 @@ span#hisPagamento{
 
 div#hisPagamento table{
     position: absolute;
-    margin-top: 180px;
-    
+    padding-top: 50px;
+    margin-top: 80px;
 }
 
 div#hisPagamento table td{
@@ -408,14 +412,15 @@ div#hisPagamento table td{
     padding: 5px;
     margin-top: 200px;
     text-align: center;
-    border: 1px solid rgb(0,0,0);   
+    border: 1px solid rgb(0,0,0); 
+    font-weight: bold;  
 }
 
 /*Formatação tela de transações*/
 
 div#quadroRecebimento{
     position: relative;
-    margin: 110px 0px 10px 80px;
+    margin: 100px 0px 10px 80px;
     padding: 20px;
     width: 500px;
     height: 430px;
@@ -634,4 +639,44 @@ div#quadroPagamento button{
     background-color: rgb(232, 15, 15);
     border: 1px solid rgb(232, 15, 15);
     color: #ffffff;
+}
+
+
+
+div.contas{
+    position: relative;
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    
+    margin-top: 100px;
+    margin-left: 50px;
+    width: 800px;
+    height: 250px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+}
+
+div.contas div{
+    padding: 10px;
+
+}
+
+ul#inf{
+    position: absolute;
+    margin-top: -43px;
+    margin-left: -40px;
+}
+
+ul#inf li{
+    display: inline-block;
+    box-sizing: border-box;
+    width: 200px;
+    margin-right: -4px;
+    border-right: 1px solid rgb(0,0,0);
+    
+    font-size: 15pt;
+    background-color: #FEA50D;
+    padding: 10px;
+    color: #ffffff;
+
 }
