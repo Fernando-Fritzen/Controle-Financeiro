@@ -10,7 +10,7 @@
 <body>
 <div class="header">
     <header id="topo">
-        <img src="img/logo1.png" alt="logo" id="logo">
+        <img src="img/logo.png" alt="logo" id="logo">
         <div class="icon">
             <span>Olá, Fernando</span>
             <a href="login.html"><img src="img/avatar.png" alt="icon user" id="icon"></a>
@@ -41,14 +41,40 @@
             <li>Conta</li>
             <li>Vencimento</li>
             <li>Valor</li>
+            <li>Parcelas</li>
             <li>Status</li>
         </ul>
 
         <div>Aluguel</div>
         <div>10-07-2020</div>
         <div>R$ 700,00</div>
+        <div>Fixo</div>
         <div>A pagar</div>
 
+        <div>Celular</div>
+        <div>10-07-2020</div>
+        <div>R$ 450,00</div>
+        <div>3/12</div>
+        <div>Pago</div>        
+    </div>
+
+    <div class="novaConta">
+        <div id="legenda">Nova conta</div>
+
+        <span id="conta">Origem da conta *</span><br/>
+            <input required="required" class="origem_conta" type="text" placeholder="Conta"/>
+
+        <span id="data_vencimento">Data de vencimento *</span><br/>
+            <input required="required" class="data_vencimento" type="date" placeholder="Vencimento"/>
+
+        <span id="preco">Preço *</span><br/>
+            <input required="required" class="preco" type="number" placeholder="Preço"/>
+
+        <span id="parcelas">Parcelas *</span><br/>
+            <input required="required" class="parcelas" type="number" placeholder="Parcelas"/>
+
+        <span id="fixo">Fixo</span>
+            <input type="checkbox" class="fixo"/>
     </div>
 
 </div>
